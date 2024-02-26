@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background-image: url(images/background.jpg);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.search-container {
+    position: relative;
+    display: inline-block;
+  }
+  .search-input {
+    padding: 10px 30px;
+    border: 1px solid #9a29b9; 
+    border-radius: 20px;
+    font-size: 16px;
+    width: 200px;
+    background-color: transparent; 
+    color: white; 
+  }
+  .search-button {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+  }
+  .fa-search {
+    padding: 10px;
+    color: pink; 
+  }
+
+  .tasks_container{
+    height: 600px;
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #ffff;
+  }
+
+  .left_container{
+    padding: 20px;
+    height: 400px;
+    width: 400px;
+    backdrop-filter: blur(40px);
+    border: #ffff solid 2px;
+    border-radius: 30px;
+  }
+  .right_container{
+    padding: 20px;
+    height: 400px;
+    width: 400px;
+    backdrop-filter: blur(40px);
+    border: #ffff solid 2px;
+    border-radius: 30px;
+  }
+  .addTaskBtn{
+    height: 40px;
+    width: 200px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 30px;
+    background-color: #9a29b9;
+    color: #ffff;
+    font-size: 15px;
+    border-radius: 30px;
+    border: #ffff 2px solid;
+  }
+
+  .taskCount {
+    height: 40px;
+    width: 60px;
+    background-color: transparent;
+    color: #ffff;
+    border: 3px solid;
+    border-radius: 40px;
+    position: absolute;
+    bottom: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.taskInput{
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-top: 20px;
+    color: #ffff;
+}
+.saveTaskBtn{
+    height: 30px;
+    width: 60px;
+    background: #9a29b9;
+    color: #ffff;
+    border-radius: 15px;
+    border: 1px solid;
+}
+.taskList{
+    margin: 20px;
+    font-size: 20px;
+}
+.taskList2{
+    margin: 20px;
+    font-size: 20px;
+}
+input[type="checkbox"] {
+    -webkit-appearance: none;                            
+    width: 20px;      
+    height: 20px;
+    border-radius: 10px; 
+    background-color: transparent; 
+    border: 3px solid #ffff;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #9a29b9;
+}
+label{
+    vertical-align: top;
+}
+
+@media screen and (max-width: 1000px) {
+  .tasks_container{
+     height: 100% ;
+     width: 300px ;
+   }
+   .left_container{
+     width: 300px;
+     height: 300px;
+     margin: 10px;
+   }
+   .right_container{
+     width: 300px;
+     height: 300px;
+     margin: 10px;
+   }
+ .tasks_container{
+   height: 600px ;
+   width: 100% ;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   color: #ffff;
+ }
+ /* .container{ */
+   /* height: 100%; */
+ /* } */
+ .search{
+   text-align: center !important;
+   margin: 10px;
+ }
+}
+
+@media screen and (max-width: 728px) {
+ .left_container{
+     width: 235px;
+   }
+   .right_container{
+     width: 235px;
+   }
+   .addTaskBtn{
+     width: 125px;
+   }
+}
+
+@media screen and (max-width: 600px) {
+ .search{
+   text-align: center !important;
+   margin: 10px;
+ }
+ .tasks_container{
+   height: 100% ;
+   width: 300px ;
+   flex-direction: column;
+ }
+ .left_container{
+   width: 300px;
+   height: 300px;
+ }
+ .right_container{
+   width: 300px;
+   height: 300px;
+ }
+ .container{
+   height: 100%;
+ }
+}
+
+@media screen and (max-width: 400px) {
+ .left_container{
+   width: 250px;
+   height: 250px;
+   margin-bottom: 10px;
+ }
+ .right_container{
+   width: 250px;
+   height: 250px;
+ }
+ .addTaskBtn{
+   width: 125px;
+ }
+}
+.editBtn {
+  float: inline-end;
+  height: 30px;
+  width: 30px;
+  color: aqua;
+  background-color: transparent;
+  border: none;
+}
+.deleteBtn{
+float: inline-end;
+height: 30px;
+width: 30px;
+color: red;
+background-color: transparent;
+outline: none;
+border: none;
+}
+#completed{
+  width: 170px !important;
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+@media screen and (max-width: 700px) {
+  #completed{
+    width: 110px !important;
+  }
+}
