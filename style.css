@@ -242,3 +242,6 @@ border: none;
     width: 110px !important;
   }
 }
+.task-item{
+  margin-bottom: 6px;
+}
